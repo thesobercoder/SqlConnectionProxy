@@ -11,6 +11,9 @@ This class adds functionality of logging the `Open`, `Close` and `Dispose` metho
 # Test
 Use the following sql snippet to find out the leaking connections
 
+# Note
+This class assumes that you configured `log4net` to write logs to a database table named `Log`. If not, please change the query below with your table name.
+
 ```
 WITH CTE_Log
 AS
